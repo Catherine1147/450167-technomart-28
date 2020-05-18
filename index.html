@@ -5,8 +5,142 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+    <header class="page-header">
+      <a class="page-header__logo-link logo-link">
+        <img src="https://via.placeholder.com/108x18" class="page-header__logo-image logo-image" width="108" height="18" alt="Логотип магазина «Техномарт»">
+      </a>
+      <form action="#" method="post">
+        <input type="search" name="search" class="page-header__input" placeholder="Поиск:">
+      </form>
+      <a href="#" class="page-header__bookmarks">Закладки: 0</a>
+      <a href="#" class="page-header__basket">Корзина: 0</a>
+      <a href="#" class="page-header__order">Оформить заказ</a>
+      <i class="page-header__text">Интернет-магазин  строительных материалов  и инструментов для ремонта</i>
+      <section class="page-header__contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <a href="tel:+78125550555" class="page-header__contacts-tel">+7 (812) 555-05-55</a>
+        <span class="page-header__contacts-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+      </section>
+      <section class="page-header__user-block user-block">
+        <h2 class="visually-hidden">Авторизация</h2>
+        <a href="#" class="user-block__login">Войти</a>
+        <a href="#" class="user-block__reg">Регистрация</a>
+      </section>
+      <nav class="main-nav">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item--current">
+            <a href="index.html" class="site-list__link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#" class="site-list__link">Компания</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html" class="site-list__link">Каталог</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#" class="site-list__link">Новости</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#" class="site-list__link">Спецпредложения</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#" class="site-list__link">Доставка</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#" class="site-list__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Интернет-магазин «Техномарт»</h1>
+      <section class="about-us">
+        <h2 class="about-us__title">Компания «Техномарт»</h2>
+        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+        Техномарт работает со многими транспортными компаниями:
+        </p>
+        <ul class="about-us__list">
+          <li class="about-us__item">Деловые линии</li>
+          <li class="about-us__item">Автотрейдинг</li>
+          <li class="about-us__item">ЖелДорЭкспедиция</li>
+        </ul>
+        <a href="#" class="about-us__button button">Подробнее о компании</a>
+      </section>
+      <section class="map">
+        <h2 class="map__title">Контакты</h2>
+        <p class="map__text">Вы можете забрать товар сами, заехав в наш офис:</p>
+        <img src="https://via.placeholder.com/300x158" class="map__image" width="300" height="158" alt="Карта">
+        <a href="#" class="map__button button">Заблудились? Напишите нам!</a>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__top">
+        <a class="page-footer__logo-link logo-link">
+          <img src="https://via.placeholder.com/138x23" class="page-header__logo-image logo-image" width="138" height="23" alt="Логотип магазина «Техномарт»">
+        </a>
+        <p class="page-footer__contacts">
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
+          +7 (812) 555-05-55
+        </p>
+        <ul class="page-footer__list site-nav">
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Компания</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Новости</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="catalog.html" class="site-nav__link">Каталог</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Доставка</a>
+          </li>
+          <li class="site-nav__item">
+            <a href="#" class="site-nav__link">Контакты</a>
+          </li>
+        </ul>
+        <ul class="page-footer__list">
+          <li>
+            <a href="#">Материалы</a>
+          </li>
+          <li>
+            <a href="#">Техника</a>
+          </li>
+          <li>
+            <a href="#">Инструмент</a>
+          </li>
+          <li>
+            <a href="#">Спецпредложения</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__bottom">
+        <p class="page-footer__copyright">
+          &copy; 2010–2019 Компания «Техномарт» <br>
+          Все права защищены
+        </p>
+        <section class="page-footer__share share">
+          <h2 class="visually-hidden">Поделиться в соцсетях</h2>
+          <ul class="share__list">
+            <li class="share__item share__item--vk">
+              <a href="#">Вконтакте</a>
+            </li>
+            <li class="share__item share__item--fb">
+              <a href="#">Фейсбук</a>
+            </li>
+            <li class="share__item share__item--inst">
+              <a href="#">Инстаграм</a>
+            </li>
+          </ul>
+        </section>
+          <p class="page-footer__mail">Обратная связь: 
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+          <p class="page-footer__dev">Разработано — 
+            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          </p>
+      </div>
+    </footer>
   </body>
 </html>
