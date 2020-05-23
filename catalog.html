@@ -70,56 +70,99 @@
         </li>
       </ul>
       <h1 class="page-title">Перфораторы</h1>
-      <form action="https://echo.htmlacademy.ru/" method="get" class="filter">
-        <fieldset class="filter__makers">
-          <legend class="filter__title">Производители:</legend>
-          <ul class="filter__list">
-            <li class="filter__item">
-              <label class="filter__label">
-                <input type="checkbox" name="bosh" checked>Bosh
-              </label>
-            </li>
-            <li class="filter__item">
-              <label class="filter__label">
-                <input type="checkbox" name="interskol">Интерскол
-              </label>
-            </li>
-            <li class="filter__item">
-              <label class="filter__label">
-                <input type="checkbox" name="makita" checked>Makita
-              </label>
-            </li>
-            <li class="filter__item">
-              <label class="filter__label">
-                <input type="checkbox" name="dewalt">Dewalt
-              </label>
-            </li>
-            <li class="filter__item">
-              <label class="filter__label">
-                <input type="checkbox" name="hitachi">Hitachi
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend class="filter__title">Питание:</legend>
-          <ul>
-            <li class="filter__item">
-              <label class="filter__label">
-                <input type="radio" name="supply" value="battery" checked>Аккумуляторные
-              </label>
-            </li>
-            <li class="filter__item">
-              <label class="filter__label">
-                <input type="radio" name="supply" value="mains">Сетевые
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <button type="submit">Показать</button>
-      </form>
+      <section class="filter">
+        <h2 class="filter__title">Фильтр:</h2>
+        <form action="https://echo.htmlacademy.ru/" method="get" class="filter__form">
+          <fieldset class="filter_price">
+            <legend class="filter__legend">Цена:</legend>
+              <div>
+                <!--здесь будет бегунок-->
+              </div>
+              <div class="filter__price-controls">
+                <label class="filter__min-price">от
+                  <input type="text" name="min-price" value="0">
+                </label>
+                <label class="filter__max-price">до
+                  <input type="text" name="max-price" value="30000">
+                </label>
+              </div>
+          </fieldset>
+          <fieldset class="filter__makers">
+            <legend class="filter__legend">Производители:</legend>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input type="checkbox" name="bosh" checked>Bosh
+                </label>
+              </li>
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input type="checkbox" name="interskol">Интерскол
+                </label>
+              </li>
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input type="checkbox" name="makita" checked>Makita
+                </label>
+              </li>
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input type="checkbox" name="dewalt">Dewalt
+                </label>
+              </li>
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input type="checkbox" name="hitachi">Hitachi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend class="filter__legend">Питание:</legend>
+            <ul>
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input type="radio" name="supply" value="battery" checked>Аккумуляторные
+                </label>
+              </li>
+              <li class="filter__item">
+                <label class="filter__label">
+                  <input type="radio" name="supply" value="mains">Сетевые
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
+      </section>
       <section class="goods">
         <h2 class="visually-hidden">Товары</h2>
+        <section class="goods__sort sort">
+          <h3 class="sort__title">Сортировка:</h3>
+          <ul class="sort__list">
+            <li class="sort__item">
+              <a href="#" class="sort__link sort__link--active">По цене</a>
+            </li>
+            <li class="sort__item">
+              <a href="#" class="sort__link">По типу</a>
+            </li>
+            <li>
+              <a href="#" class="sort__link">По функционалу</a>
+            </li>
+          </ul>
+          <ul class="sort__arrow-list">
+            <li>
+              <a href="#" class="sort__arrow sort__arrow--up ">
+                <span class="visually-hidden">Сортировка по возрастанию цены</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="visually-hidden">Сортировка по убыванию цены</span>
+              </a>
+            </li>
+          </ul>
+        </section>
         <ul class="goods__list">
           <li class="goods__item">
             <img src="https://via.placeholder.com/144x128" class="goods__img" width="144" height="128" alt="Перфоратор BOSH BFG 3000">
@@ -175,6 +218,26 @@
             <a href="#" class="goods__current-price">12500 Р.</a>
           </li>
         </ul>
+        <ul class="goods__paginator paginator">
+          <li class="paginator__item">
+            <a href="#" class="paginator__link paginator__link--active">1</a>
+          </li>
+          <li class="paginator__item">
+            <a href="#" class="paginator__link">2</a>
+          </li>
+          <li class="paginator__item">
+            <a href="#" class="paginator__link">3</a>
+          </li>
+          <li class="paginator__item">
+            <a href="#" class="paginator__link">следующая</a>
+          </li>
+        </ul>
+      </section>
+      <section class="about-perforators">
+        <h2 class="about-perforators">Пара слов о перфораторах</h2>
+        <p class="about-perforators">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</p>
+        <p class=" about-perforators">Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.</p>
+        <p class="about-perforators">В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </section>
     </main>
     <footer class="page-footer">
@@ -184,7 +247,7 @@
         </a>
         <p class="page-footer__contacts">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
-          +7 (812) 555-05-55
+          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
         </p>
         <ul class="page-footer__list site-nav">
           <li class="site-nav__item">
@@ -245,5 +308,14 @@
           </p>
       </div>
     </footer>
+    <section class="modal-basket">
+      <h2 class="visually-hidden">Добавление в корзину</h2>
+      <button type="button" class="modal-basket__close close">
+        <span class="visually-hidden">Закрыть всплывающее окно</span>
+      </button>
+      <p class="modal-basket__message">Товар добавлен в корзину!</p>
+      <a href="#" class="modal-basket__order button">Оформить заказ</a>
+      <a href="#" class="modal-basket__go-on">Продолжить покупки</a>
+    </section>
   </body>
 </html>
