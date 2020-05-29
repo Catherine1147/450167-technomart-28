@@ -271,13 +271,19 @@
           <h2 class="visually-hidden">Поделиться в соцсетях</h2>
           <ul class="share__list">
             <li class="share__item share__item--vk">
-              <a href="#">Вконтакте</a>
+              <a href="#">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
             </li>
             <li class="share__item share__item--fb">
-              <a href="#">Фейсбук</a>
+              <a href="#">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
             </li>
             <li class="share__item share__item--inst">
-              <a href="#">Инстаграм</a>
+              <a href="#">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
             </li>
           </ul>
         </section>
@@ -297,24 +303,25 @@
       <form action="https://echo.htmlacademy.ru" method="post" class="modal-order__form">
         <p>
           <label for="your-name" class="modal-order__name">Ваше имя:</label>
-        </p>
-        <p>
-          <input type="text" name="name" id="your-name" class="modal-order__input" placeholder="Имя Фамилия">
+          <input type="text" name="name" id="your-name" class="modal-order__input" placeholder="Имя Фамилия" required>
         </p>
         <p>
           <label for="your-email">Ваш e-mail:</label>
-        </p>
-        <p>
-          <input type="email" name="email" id="your-email" class="modal-order__input" placeholder="email@example.com">
+          <input type="email" name="email" id="your-email" class="modal-order__input" placeholder="email@example.com" required>
         </p>
         <p>
           <label for="letter-text">Текст письма:</label>
-        </p>
-        <p>
           <textarea name="text" id="letter-text" cols="55" rows="6" placeholder="В свободной форме"></textarea>
         </p>
         <button type="submit" class="modal-order__button button">Оформить заказ</button>
       </form>
+    </section>
+    <section class="modal-map">
+      <h2 class="visually-hidden">Карта</h2>
+      <img src="img/modal-map.png" width="943" height="449" alt="Карта">
+      <button type="button" class="modal-map__close close">
+        <span class="visually-hidden">Закрыть всплывающее окно</span>
+      </button>
     </section>
   </body>
 </html>

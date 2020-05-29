@@ -73,46 +73,45 @@
       <section class="filter">
         <h2 class="filter__title">Фильтр:</h2>
         <form action="https://echo.htmlacademy.ru/" method="get" class="filter__form">
-          <fieldset class="filter_price">
+          <fieldset class="filter__price">
             <legend class="filter__legend">Цена:</legend>
-              <div>
-                <!--здесь будет бегунок-->
-              </div>
-              <div class="filter__price-controls">
-                <label class="filter__min-price">от
-                  <input type="text" name="min-price" value="0">
-                </label>
-                <label class="filter__max-price">до
-                  <input type="text" name="max-price" value="30000">
-                </label>
-              </div>
+            <div class="range-controls">
+            </div>
+            <div class="filter__price-controls">
+              <label class="filter__min-price">от
+                <input type="text" name="min-price" value="0">
+              </label>
+              <label class="filter__max-price">до
+                <input type="text" name="max-price" value="30000">
+              </label>
+            </div>
           </fieldset>
           <fieldset class="filter__makers">
             <legend class="filter__legend">Производители:</legend>
             <ul class="filter__list">
               <li class="filter__item">
                 <label class="filter__label">
-                  <input type="checkbox" name="bosh" checked>Bosh
+                  <input type="checkbox" name="filter-bosh" checked>Bosh
                 </label>
               </li>
               <li class="filter__item">
                 <label class="filter__label">
-                  <input type="checkbox" name="interskol">Интерскол
+                  <input type="checkbox" name="filter-interskol">Интерскол
                 </label>
               </li>
               <li class="filter__item">
                 <label class="filter__label">
-                  <input type="checkbox" name="makita" checked>Makita
+                  <input type="checkbox" name="filter-makita" checked>Makita
                 </label>
               </li>
               <li class="filter__item">
                 <label class="filter__label">
-                  <input type="checkbox" name="dewalt">Dewalt
+                  <input type="checkbox" name="filter-dewalt">Dewalt
                 </label>
               </li>
               <li class="filter__item">
                 <label class="filter__label">
-                  <input type="checkbox" name="hitachi">Hitachi
+                  <input type="checkbox" name="filter-hitachi">Hitachi
                 </label>
               </li>
             </ul>
@@ -290,13 +289,19 @@
           <h2 class="visually-hidden">Поделиться в соцсетях</h2>
           <ul class="share__list">
             <li class="share__item share__item--vk">
-              <a href="#">Вконтакте</a>
+              <a href="#">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
             </li>
             <li class="share__item share__item--fb">
-              <a href="#">Фейсбук</a>
+              <a href="#">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
             </li>
             <li class="share__item share__item--inst">
-              <a href="#">Инстаграм</a>
+              <a href="#">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
             </li>
           </ul>
         </section>
